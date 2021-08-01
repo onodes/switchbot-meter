@@ -67,7 +67,7 @@ class Meter(Device):
         self._temperature = None
     
     def update(self) -> str:
-        status = super.update()
+        status = super().update()
         self._humidity = status["humidity"]
         self._temperature = status["temperature"]
         return status
